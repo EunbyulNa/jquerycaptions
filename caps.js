@@ -35,10 +35,12 @@ $(function () {
 //세번째
 var $th = $('.th');
   $th .on('mouseover', function(){
-    $(this).find('strong').stop().animate({'bottom':4}, time);
+    $(this).find('strong').stop().animate({'bottom':4}, 'easeOutQuart');
+    $(this).find('img').stop().animate({'top':'-50px'},800,'easeOutQuart');
   })
   .on('mouseout', function(){
-    $(this).find('strong').stop().animate({'bottom':-50}, time);
+    $(this).find('strong').stop().animate({'bottom':-50}, 'easeOutQuart');
+    $(this).find('img').stop().animate({'top':'0'},800,'easeOutQuart');
   });
 
 //네번째
